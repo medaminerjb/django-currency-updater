@@ -1,0 +1,13 @@
+setup.py
+django_currency_updater/__init__.py
+django_currency_updater/apps.py
+django_currency_updater/models.py
+django_currency_updater/settings.py
+django_currency_updater/updater.py
+django_currency_updater.egg-info/PKG-INFO
+django_currency_updater.egg-info/SOURCES.txt
+django_currency_updater.egg-info/dependency_links.txt
+django_currency_updater.egg-info/requires.txt
+django_currency_updater.egg-info/top_level.txt
+tests/__init__.py
+tests/test_updater.py

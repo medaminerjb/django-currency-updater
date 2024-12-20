@@ -1,0 +1,2 @@
+django_currency_updater
+tests
