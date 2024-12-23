@@ -13,6 +13,9 @@ setup(
         "Django>=3.2",
         "requests",
     ],
+    extras_require={
+        "automation": ["apscheduler"],  # Optional APScheduler dependency
+    },
     classifiers=[
         "Framework :: Django",
         "Programming Language :: Python :: 3",

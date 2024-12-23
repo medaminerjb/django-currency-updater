@@ -5,6 +5,7 @@ django_currency_updater/admin.py
 django_currency_updater/apps.py
 django_currency_updater/middleware.py
 django_currency_updater/models.py
+django_currency_updater/scheduler.py
 django_currency_updater/settings.py
 django_currency_updater/updater.py
 django_currency_updater/urls.py

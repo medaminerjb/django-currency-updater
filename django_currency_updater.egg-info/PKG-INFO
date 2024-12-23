@@ -12,3 +12,5 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Requires-Dist: Django>=3.2
 Requires-Dist: requests
+Provides-Extra: automation
+Requires-Dist: apscheduler; extra == "automation"

@@ -23,7 +23,7 @@ class CurrencyMiddleware:
             request.currency_rate = currency.rate
         except Currency.DoesNotExist:
             # If the currency doesn't exist, use the default
-            request.currency_symbol = settings.DEFAULT_CURRENCY_SYMBOL
+            request.currency_symbol = " "
             request.currency_rate = 1  # Default rate, or you can handle it differently
 
         # Continue processing the request
