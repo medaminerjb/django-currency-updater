@@ -36,6 +36,8 @@ jobs:
         with:
           branch: gh-pages  # The branch to deploy the documentation to
           folder: build/html  # The folder containing the generated HTML docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
   # Optionally, add a test step to make sure the documentation is working before deployment
   test:
