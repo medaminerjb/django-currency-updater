@@ -120,7 +120,7 @@ In your template, load the currency_tags and use the {% currency %} tag to conve
 ```html
 {% load currency_tags %}
 
-<p>Price in EUR: {% currency 100 %} EUR</p>
+<p>Price in EUR: {% currency 100 %} </p>
 ```
 #### Arguments:
 - **amount**: The amount to be converted
