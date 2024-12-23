@@ -29,3 +29,12 @@ source_suffix = {
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
+# Set the base URL for your site
+html_baseurl = "https://medaminerjb.github.io/django-currency-update/"
+
+# Ensure the static path is included correctly
+html_static_path = ['_static']
