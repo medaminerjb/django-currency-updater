@@ -22,10 +22,9 @@ python manage.py load_currencies
 ## Currency Conversion in Templates
 The library provides a template tag to convert currencies directly within your Django templates.
 
-### Example:
-In your template, load the currency_tags and use the {% currency %} tag to convert an amount from one currency to another.
+### Usage Example:
+In your template, load the currency_tags and use the `{% currency %}` tag to convert an amount from one currency to another.
 ```html
 {% load currency_tags %}
 
 <p>Price in EUR: {% currency 100 %} </p>
-```
