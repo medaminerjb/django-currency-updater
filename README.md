@@ -91,13 +91,10 @@ The library integrates with Django’s admin and supports scheduling periodic up
 3. Ensure your task runner (e.g., Celery or APScheduler) is running to execute the scheduled updates.
 
 ### Preloading Currency Data
-Use the `load_currencies` function to preload currency data into the database:
+Use the `load_currencies` command to preload currency data into the database:
 
-```python
-from django_currency_updater.updater import load_currencies
-
-# Load predefined currencies
-load_currencies()
+```bash
+python manage.py load_currencies
 ```
 
 ### Accessing Currency Data
