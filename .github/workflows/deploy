@@ -28,6 +28,7 @@ jobs:
 
       - name: Build documentation
         run: |
+          make clean  # Cleans up previously generated files
           make rebuild  # Rebuilds the docs using your Makefile
 
       - name: Deploy documentation to GitHub Pages
@@ -35,7 +36,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # The branch to deploy the documentation to
-          folder: docs/build/html  # The folder containing the generated HTML docs
+          folder: build/html  # The folder containing the generated HTML docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
