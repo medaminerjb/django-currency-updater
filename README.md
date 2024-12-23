@@ -12,6 +12,7 @@
 - **Error Handling**: Includes robust error handling for API requests and database operations.
 - **Task Scheduling**: Schedule periodic updates for currency rates using a scheduler.
 - **Currency Preloading**: Load predefined currency data into the database.
+- **Currency Conversion in Templates**: Use the {% currency %} template tag to convert prices between currencies directly in your Django templates.
 
 ---
 
@@ -110,7 +111,21 @@ currencies = Currency.objects.all()
 usd = Currency.objects.get(code="USD")
 print(f"USD Rate: {usd.rate}")
 ```
+## Template Tags
+### Currency Conversion in Templates
+The library provides a template tag to convert currencies directly within your Django templates.
 
+#### Usage Example:
+In your template, load the currency_tags and use the {% currency %} tag to convert an amount from one currency to another.
+```html
+{% load currency_tags %}
+
+<p>Price in EUR: {% currency 100 from_currency="USD" to_currency="EUR" %} EUR</p>
+```
+#### Arguments:
+- **amount**: The amount to be converted
+- **from_currency**: The currency code to convert from (default: "USD").
+- **to_currency**: The currency code to convert to (default: "EUR").
 ---
 
 ## Testing
