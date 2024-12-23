@@ -28,13 +28,12 @@ source_suffix = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = ['_static']
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 # Set the base URL for your site
-html_baseurl = "https://medaminerjb.github.io/django-currency-update/"
+html_baseurl = "https://medaminerjb.github.io/django-currency-update/docs/"
 
 # Ensure the static path is included correctly
 html_static_path = ['_static']
