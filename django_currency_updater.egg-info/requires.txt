@@ -1,5 +1,0 @@
-Django>=3.2
-requests
-
-[automation]
-apscheduler
