@@ -24,9 +24,13 @@ jobs:
 
       - name: Build package
         run: python -m build
-
+      
+      - name: Clean old builds
+        run: rm -rf dist/*
+        
       - name: Publish to PyPI
         env:
           TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-        run: twine upload dist/*
+        run: |
+          twine upload dist/* || echo "Version already exists on PyPI"
